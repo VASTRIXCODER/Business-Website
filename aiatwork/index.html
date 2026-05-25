@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>AIATWORK — AI Automation Agency · Custom Sales Systems</title>
+<meta name="description" content="AIATWORK builds custom AI voice agents, power dialers, and CRM automation that close more deals and grow revenue for sales teams." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          sans: ['Inter', 'ui-sans-serif', 'system-ui'],
+          display: ['"Space Grotesk"', 'Inter', 'sans-serif'],
+          serif: ['"Instrument Serif"', 'serif'],
+        },
+        colors: {
+          ink: {
+            950: '#050A09',
+            900: '#081513',
+            800: '#0C211D',
+            700: '#112E27',
+            600: '#173D35',
+            500: '#224F44',
+          },
+          /* "ice" name kept for code stability — values are now mint/emerald greens */
+          ice: {
+            50:  '#ECFDF5',
+            100: '#D1FAE5',
+            200: '#A7F3D0',
+            300: '#6EE7B7',
+            400: '#34D399',
+            500: '#10B981',
+          },
+        },
+        boxShadow: {
+          'glass': '0 8px 32px rgba(2,12,8,0.5), inset 0 1px 0 rgba(255,255,255,0.08)',
+          'elev': '0 24px 80px -20px rgba(2,12,8,0.7), inset 0 1px 0 rgba(255,255,255,0.06)',
+          'glow': '0 0 60px rgba(110,231,183,0.25)',
+        },
+      },
+    },
+  };
+</script>
+
+<link rel="stylesheet" href="styles.css" />
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+</head>
+<body class="bg-ink-900 text-white font-sans antialiased min-h-screen">
+  <div id="root"></div>
+  <script type="text/babel" src="icons.jsx"></script>
+  <script type="text/babel" src="sections2.jsx"></script>
+  <script type="text/babel" src="sections.jsx"></script>
+  <script type="text/babel" src="app.jsx"></script>
+</body>
+</html>
